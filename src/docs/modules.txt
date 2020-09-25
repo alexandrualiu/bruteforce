@@ -1,0 +1,6 @@
+1. Generarea parolelor
+2. Salvarea parolelor
+    2.1 Se salveaza parolele in grupuri de cate 500 per fisier
+    2.2 Se incarca parolele
+3. Deschiderea fisierului
+4. Client care incarca cate un fiser si deschide 500 de thread-uri care incearca sa decshida fisierul
