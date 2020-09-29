@@ -18,7 +18,9 @@ class FileRepository:
 
     def remove_files(self, file_names):
         for file_name in file_names:
-            os.remove(('%s\\%s' %(self.data_folder, file_name)))
+            fullpath = ('%s\\%s' %(self.data_folder, file_name))
+            if os.path.isfile(fullpath):
+                os.remove(fullpath)
     
     def remove_all_files(self):
         for file_name in os.listdir(self.data_folder):
